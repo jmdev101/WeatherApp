@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Project</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+    <h1>Weather API</h1>
+
+    <form action="/weather" method="post">
+        <input type="text" name="latitude" placeholder="Latitude" required>
+        <input type="text" name="longitude" placeholder="Longitude" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <% if (locals.content) { %>
+        <h2>Current Temperature: <%= content.current.temp_c %> °C</h2>
+        <img src="<%= content.current.condition.icon %>" alt="Icon Condition">
+        <h3><%= content.current.condition.text %></h3>
+        <h4>Latitude/Longitude: <%= content.location.lat %>, <%= content.location.lon %></h4>
+
+        <p>Name: <%= content.location.name %></p>
+        <p>Region: <%= content.location.region %></p>
+        <p>Country: <%= content.location.country %></p>
+    <% } %>
+
+</body>
+</html>
