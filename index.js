@@ -17,9 +17,8 @@ app.get('/', (req, res) => {
 
 app.post("/weather", async (req, res) => {
 
-    const latitude = req.body.latitude;
-    const longitude = req.body.longitude;
-    const config = { params: {  key: apiKey, q : `${latitude}, ${longitude}` }};
+    const q = req.body.q;
+    const config = { params: {  key: apiKey, q : q }};
 
     try {
         const response = await axios.get(`${url}`, config);
