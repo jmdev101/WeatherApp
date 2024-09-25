@@ -1,14 +1,89 @@
 body {
+    font-family: "Inter", system-ui;
     text-align: center;
 }
 
 img {
     height: 150px;
     width: 150px;
+
+}
+
+p, ul {
+    border-bottom: 8px;
+}
+
+h1 {
+    font-weight: 800;
+    margin-top: 1.5rem;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: 12px;
 }
 
 h5 {
     display: inline;
     margin-bottom: 0px;
     margin-left: 8px;
+}
+
+.home {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+}
+
+[type="text"], [type="submit"] {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    background-color: black;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+}
+
+[type="text"] {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    width: 25%;
+}
+
+::placeholder {
+    color: black;
+  }
+
+form {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.temp-container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 60%;
+    margin: auto;
+    border-radius: 20px;
+    padding: .5rem 1.5rem;
+}
+
+.start {
+    align-self: flex-start;
+    margin: .5rem 0;
+}
+
+.middle {
+    font-size: 130px;
+    font-weight: 600;
+    margin: 1.5rem 0;
+}
+
+.last {
+    display: flex;
+    justify-content: space-evenly;
+    margin: .5rem 0;
 }
