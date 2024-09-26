@@ -14,8 +14,12 @@ p, ul {
 }
 
 h1 {
-    font-weight: 800;
+    font-weight: 700;
     margin-top: 1.5rem;
+}
+
+.weather-text {
+    color: #E38B29;
 }
 
 h2 {
@@ -27,18 +31,53 @@ h5 {
     display: inline;
     margin-bottom: 0px;
     margin-left: 8px;
+    color: #E38B29;
+}
+
+.navigation {
+    color: #E38B29;
+}
+
+.navigation:hover {
+    color: #E38B2990;
 }
 
 .home {
-    background-color: #e0e0e0;
+    background-color: #E38B29;
     border-radius: 8px;
+    color: white;
+}
+
+.home:hover {
+    background-color: #E38B2990;
+    color: white;
+}
+
+.signup {
+    background-color: #E38B29;
+    color: white;
+}
+
+.signin {
+    border: 1px solid #E38B29;
+    color: #E38B29;
+}
+
+.signup:hover {
+    background-color: #E38B2990;
+    color: white;
+}
+
+.signin:hover {
+    background-color: #E38B29;
+    color: white;
 }
 
 [type="text"], [type="submit"] {
     font-size: 20px;
     font-weight: 300;
     color: white;
-    background-color: black;
+    background-color: #E38B29;
     padding: 12px;
     border: none;
     border-radius: 12px;
@@ -51,6 +90,10 @@ h5 {
     width: 25%;
 }
 
+[type="submit"]:hover {
+    background-color: #E38B2990;
+}
+
 ::placeholder {
     color: black;
   }
@@ -61,14 +104,15 @@ form {
 }
 
 .temp-container {
+    background-color: #E38B29;
     align-content: center;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     width: 60%;
     margin: auto;
     border-radius: 20px;
     padding: .5rem 1.5rem;
+    color: white;
 }
 
 .start {
